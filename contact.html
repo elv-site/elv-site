@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ELV İletişim</title>
+  <meta name="description" content="ELV iletişim — randevu, bilgi, satın alma." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <div class="logo">ELV</div>
+        <div class="tag">Sen değişirsen dünyan değişir</div>
+      </a>
+      <nav class="navlinks">
+        <a href="coaching.html">Koçluk</a>
+        <a href="elv-cream.html">ELV Cream</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+      <button class="hamburger" data-hamburger>MENU</button>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <a href="coaching.html">Koçluk</a>
+      <a href="elv-cream.html">ELV Cream</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">İletişim</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>İletişim</h2>
+      <p>Koçluk randevusu, ELV Cream bilgi veya sipariş için ulaşabilirsin.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Hızlı iletişim</h3>
+        <p>En hızlı: WhatsApp</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/905557011549" target="_blank" rel="noopener">WhatsApp’tan yaz</a>
+        </div>
+        <div class="note">İstersen buraya Instagram linkini de ekleriz.</div>
+      </div>
+
+      <div class="card">
+        <h3>Mesaj bırak</h3>
+        <form class="form" onsubmit="event.preventDefault(); alert('Mesajın alındı. Formu canlı yapmak için ücretsiz Formspree ekleyebiliriz.');">
+          <input class="input" placeholder="Ad Soyad" required />
+          <input class="input" placeholder="E-posta veya Telefon" required />
+          <textarea class="input" placeholder="Mesajın (Koçluk / ELV Cream / Diğer)" required></textarea>
+          <button class="btn primary" type="submit">Gönder</button>
+        </form>
+        <div class="note">Koçluk psikoterapi değildir. ELV Cream kozmetiktir; tıbbi amaçla kullanılmaz.</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<a class="whatsapp-fab" href="https://wa.me/905557011549" target="_blank" rel="noopener">WhatsApp</a>
+<script src="script.js"></script>
+</body>
+</html>
