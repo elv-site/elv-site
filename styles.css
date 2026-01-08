@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+
+
 :root{
   --gold: #C9A24D;
   --gold-soft: #E6D7A3; 
@@ -261,6 +264,7 @@ a{color:inherit;text-decoration:none}
     height:260px;
   }
 }
+
 .coaching-page main.section{
   padding-top: 0 !important;
 }
@@ -276,3 +280,91 @@ a{color:inherit;text-decoration:none}
   margin-top: 10px !important;
 }
 
+.about-grid{
+  display:grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap:56px;
+  max-width:1100px;
+  margin:0 auto;     
+  align-items:flex-start;
+}
+
+.about-left h1{
+  font-size:2.2rem;
+  margin-bottom:16px;
+}
+
+.about-left p{
+  font-size:1.05rem;
+  line-height:1.7;
+}
+
+.about-right h2{
+  margin-top:28px;
+  margin-bottom:12px;
+}
+
+.about-right p{
+  line-height:1.7;
+  margin-bottom:12px;
+}
+
+/* Mobil */
+@media (max-width: 900px){
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  color:#1e1e1e;
+}
+
+h1, h2, h3{
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.about-center{
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 18px;
+}
+
+.about-center h1,
+.about-center .back-home,
+.about-center .about-sign{
+  text-align: center;
+}
+
+.about-center p{
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.9;
+  margin: 14px 0;
+}
+
+@media (max-width: 520px){
+  .about-center p{
+    text-align: left;
+  }
+}
+
+.about-bg{
+  background-image: url("images/arkaplan.3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+
+.about-center{
+  background: rgba(255,255,255,0.82);
+  backdrop-filter: blur(2px);
+  border-radius: 18px;
+}
