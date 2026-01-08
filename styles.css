@@ -219,6 +219,14 @@ a{color:inherit;text-decoration:none}
   margin-bottom: 24px;
 }
 
+@media (max-width: 768px){
+  .cream-hero{
+    height: 260px;
+    display:block;
+    background-size: contain;
+  }
+}
+
 .elv-cream-page main.section{
   padding-top: 0 !important;
 }
@@ -236,4 +244,40 @@ a{color:inherit;text-decoration:none}
 .elv-cream-page h2,
 .elv-cream-page h3{
   margin-top: 8px !important;
+}
+
+.home-hero{
+  width:100%;
+  height:360px;
+  background: url("images/elv.logo.png") center/cover no-repeat;
+  border-radius: 0 0 28px 28px;
+  box-shadow: 0 16px 36px rgba(0,0,0,.12);
+  margin-bottom: 28px;
+}
+
+
+@media (max-width: 760px){
+  .home-hero{
+    height:260px;
+  }
+}
+
+@media (max-width: 768px){
+  .coaching-hero{
+    height: 240px;
+  }
+}
+.coaching-page main.section{
+  padding-top: 0 !important;
+}
+
+.coaching-page .container{
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.coaching-page h1,
+.coaching-page h2,
+.coaching-page h3{
+  margin-top: 10px !important;
 }
